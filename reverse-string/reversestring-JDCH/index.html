@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invertir Texto</title>
+  <!-- Enlace a Tailwind CSS vía CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="bg-white p-6 rounded shadow-md w-full max-w-md">
+    <h1 class="text-2xl font-bold mb-4 text-center">Invertir Texto</h1>
+
+    <!-- Campo de entrada para el texto -->
+    <div class="mb-4">
+      <label for="inputText" class="block text-gray-700 font-medium mb-2">Ingresa un texto:</label>
+      <input type="text" id="inputText" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Escribe algo...">
+    </div>
+
+    <!-- Botón para invertir el texto -->
+    <div class="mb-4">
+      <button id="reverseBtn" class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition">
+        Invertir
+      </button>
+    </div>
+
+    <!-- Campo para mostrar el texto invertido -->
+    <div class="mb-4">
+      <label for="resultText" class="block text-gray-700 font-medium mb-2">Texto Invertido:</label>
+      <input type="text" id="resultText" class="w-full p-2 border border-gray-300 rounded" readonly>
+    </div>
+
+    <!-- Botón para copiar el resultado -->
+    <div class="flex justify-end">
+      <button id="copyBtn" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 transition">
+        Copiar
+      </button>
+    </div>
+
+    <!-- Área para mostrar mensajes de error -->
+    <div id="errorMessage" class="mt-4 text-red-500 text-center hidden"></div>
+  </div>
+
+  <!-- Inclusión del script principal -->
+  <script src="script.js"></script>
+</body>
+</html>
